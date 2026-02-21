@@ -1,0 +1,135 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="0"
+  height="0"
+  class="visually-hidden"
+>
+  <symbol
+    id="light-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <title>Light theme icon</title>
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </symbol>
+
+  <symbol
+    id="dark-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <title>Dark theme icon</title>
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </symbol>
+
+  <symbol
+    id="settings-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <title>Settings Panel icon</title>
+    <line x1="4" y1="21" x2="4" y2="14"></line>
+    <line x1="4" y1="10" x2="4" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="12"></line>
+    <line x1="12" y1="8" x2="12" y2="3"></line>
+    <line x1="20" y1="21" x2="20" y2="16"></line>
+    <line x1="20" y1="12" x2="20" y2="3"></line>
+    <line x1="1" y1="14" x2="7" y2="14"></line>
+    <line x1="9" y1="8" x2="15" y2="8"></line>
+    <line x1="17" y1="16" x2="23" y2="16"></line>
+  </symbol>
+
+  <symbol
+    id="plus-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </symbol>
+
+  <symbol
+    id="minus-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <!-- <line x1="12" y1="5" x2="12" y2="19"></line> -->
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </symbol>
+
+  <symbol
+    id="up-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polyline points="17 11 12 6 7 11"></polyline>
+    <polyline points="17 18 12 13 7 18"></polyline>
+  </symbol>
+
+  <symbol
+    id="down-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <polyline points="7 13 12 18 17 13"></polyline>
+    <polyline points="7 6 12 11 17 6"></polyline>
+  </symbol>
+</svg>
+
+<!--
+===================================
+HTML:
+<svg class="xyz">
+  <use xlink:href="#plus-icon" />
+</svg>
+===================================
+CSS:
+.xyz {
+  width: var(--btn-icon-size);
+  height: var(--btn-icon-size);
+}
+===================================
+-->

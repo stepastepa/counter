@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Counter</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="auth-section" class="card">
+      <div id="login-box">
+        <h2>Вход</h2>
+        <div id="login-err" class="error"></div>
+        <input type="email" id="login-email" placeholder="Электронная почта" />
+        <input type="password" id="login-pass" placeholder="Пароль" />
+        <button class="btn-main" id="btn-do-login">Войти</button>
+        <button class="btn-link" id="link-to-reg">Создать аккаунт</button>
+      </div>
+
+      <div id="reg-box" class="hidden">
+        <h2>Регистрация</h2>
+        <div id="reg-err" class="error"></div>
+        <input type="text" id="reg-name" placeholder="Ваше имя в чате" />
+        <input type="email" id="reg-email" placeholder="Электронная почта" />
+        <input
+          type="password"
+          id="reg-pass"
+          placeholder="Пароль (от 6 символов)"
+        />
+        <button class="btn-main" id="btn-do-reg">Зарегистрироваться</button>
+        <button class="btn-link" id="link-to-login">Уже есть аккаунт?</button>
+      </div>
+    </div>
+
+    <div id="counter-section" class="fullscreen hidden">
+      <div id="counter-header">
+        <span id="display-name">Loading...</span>
+        <button id="btn-logout">Logout</button>
+      </div>
+
+      <div id="counting-number">00</div>
+
+      <div id="counter-actions">
+        <button id="btn-plus">
+          <svg class="svg-icon">
+            <use xlink:href="./icon-system-sprite.svg#plus-icon" />
+          </svg>
+        </button>
+        <button id="btn-minus">
+          <svg class="svg-icon">
+            <use xlink:href="./icon-system-sprite.svg#minus-icon" />
+          </svg>
+        </button>
+
+        <div class="options-bar">
+          <input type="text" id="final-number" placeholder="0"/>
+
+          <div class="switcher-container">
+            <label class="switcher-btn">
+              <svg class="svg-icon">
+                <use xlink:href="./icon-system-sprite.svg#up-icon" />
+              </svg>
+              <input
+                type="radio"
+                name="type-switcher"
+                value="forward"
+                checked
+              />
+            </label>
+            <label class="switcher-btn">
+              <svg class="svg-icon">
+                <use xlink:href="./icon-system-sprite.svg#down-icon" />
+              </svg>
+              <input
+                type="radio"
+                name="type-switcher"
+                value="backward"
+              />
+            </label>
+          </div>
+
+          <button id="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+# Зависимости
+node_modules/
+
+# old draft files
+temp/
+old/
+
+# special files
+.env
