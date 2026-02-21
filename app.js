@@ -199,7 +199,7 @@ for(let i=0; i<switchers.length; i++) {
 
 // reset counter
 resetBtn.addEventListener('click', async () => {
-  let resetNumber = document.querySelector('input[name="type-switcher"]:checked').value === "forward"?0:finalNumber.value;
+  let resetNumber = document.querySelector('input[name="type-switcher"]:checked').value === "forward"?0:+finalNumber.value;
   await setDoc(
     doc(db, "counters", auth.currentUser.uid),
     {
