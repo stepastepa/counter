@@ -158,9 +158,14 @@ btnMinus.addEventListener("click", () => {
 async function sendData(calculate) {
   // ======= ??????????????
   let currentCount = Number(document.getElementById("counting-number").textContent);
+  let currentFinal = Number(document.getElementById("final-number").value);
   // ======= ??????????????
 
-  calculate === "plus" ? (currentCount += 1) : (currentCount -= 1);
+  if(calculate === "plus") {
+    currentCount < currentFinal ? currentCount += 1 : currentCount;
+  } else {
+    currentCount > 0 ? currentCount -= 1 : currentCount;
+  };
   await setDoc(
     doc(db, "counters", auth.currentUser.uid),
     {
