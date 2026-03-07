@@ -65,6 +65,8 @@ body {
 }
 
 #counter-header {
+  flex: 0 0 auto;
+
   padding: 0.5rem;
   align-self: stretch;
 
@@ -75,10 +77,17 @@ body {
 }
 
 #counting-number {
-  font-size: min(50vw, 50vh);
+  flex: 1 1 auto;
+
+  font-size: min(30vw, 30vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #counter-actions {
+  flex: 0 0 auto;
+
   padding: 0.5rem;
   width: min(100%, 414px);
 
@@ -86,15 +95,15 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  height: 25vh;
 }
 #btn-plus, #btn-minus {
   flex: 1 0 calc(50% - (0.5rem / 2));
   border-radius: 100vw;
+  height: revert;
 }
 #btn-plus svg, #btn-minus svg {
-  width: 6vh;
-  height: 6vh;
+  width: 2rem;
+  height: 2rem;
 }
 .options-bar {
   display: flex;
