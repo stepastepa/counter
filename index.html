@@ -9,30 +9,30 @@
   <body>
     <div id="auth-section" class="card">
       <div id="login-box">
-        <h2>Вход</h2>
+        <h2>Login</h2>
         <div id="login-err" class="error"></div>
-        <input type="email" id="login-email" placeholder="Электронная почта" />
-        <input type="password" id="login-pass" placeholder="Пароль" />
-        <button class="btn-main" id="btn-do-login">Войти</button>
-        <button class="btn-link" id="link-to-reg">Создать аккаунт</button>
+        <input type="email" id="login-email" placeholder="example@mail.com" />
+        <input type="password" id="login-pass" placeholder="Password" />
+        <button class="btn-main" id="btn-do-login">Login</button>
+        <button class="btn-link" id="link-to-reg">Register</button>
       </div>
 
       <div id="reg-box" class="hidden">
-        <h2>Регистрация</h2>
+        <h2>Register</h2>
         <div id="reg-err" class="error"></div>
-        <input type="text" id="reg-name" placeholder="Ваше имя в чате" />
-        <input type="email" id="reg-email" placeholder="Электронная почта" />
+        <input type="text" id="reg-name" placeholder="Username" />
+        <input type="email" id="reg-email" placeholder="example@mail.com" />
         <input
           type="password"
           id="reg-pass"
-          placeholder="Пароль (от 6 символов)"
+          placeholder="Password"
         />
-        <button class="btn-main" id="btn-do-reg">Зарегистрироваться</button>
-        <button class="btn-link" id="link-to-login">Уже есть аккаунт?</button>
+        <button class="btn-main" id="btn-do-reg">Register</button>
+        <button class="btn-link" id="link-to-login">Already have account?</button>
       </div>
     </div>
 
-    <div id="counter-section" class="fullscreen hidden">
+    <div id="counter-section" class="counter-container hidden">
       <div id="counter-header">
         <span id="display-name">Loading...</span>
         <button id="btn-logout">Logout</button>

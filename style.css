@@ -20,7 +20,7 @@
   --bg: #f4f7f9;
   --light-bg: white;
 
-  --shadow: rgba(0, 0, 0, 0.15);
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -30,78 +30,43 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 1rem;
   color: var(--dark-text);
 }
 
 .card {
   background: var(--light-bg);
-  padding: 25px;
-  border-radius: 12px;
+  padding: 1.75rem;
+  border-radius: 1rem;
   border: 3px solid var(--dark-color);
-  box-shadow: 3px 3px 0 var(--shadow);
+  box-shadow: 4px 4px 0 var(--shadow);
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
 }
+#login-box, #reg-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
 .hidden {
   display: none !important;
 }
-.fullscreen {
+
+.counter-container {
   position: fixed;
   inset: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
 
-h2 {
-  margin-top: 0;
-}
-input {
-  font-size: 1rem;
-  padding: 0.75rem;
-  border: 1px solid var(--light-color);
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-button {
-  padding: 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-  font-size: 1rem;
-  background: var(--dark-color);
-  color: var(--light-text);
-  height: 2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn-main {
-  background: var(--primary);
-  color: var(--light-text);
-  margin-top: 1rem;
-}
-.btn-main:hover {
-  background: var(--primary-hover);
-}
-.btn-link {
-  background: none;
-  color: var(--primary);
-  text-decoration: underline;
-  margin-top: 10px;
-}
-
 #counter-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 0.5rem;
+  align-self: stretch;
 
   display: flex;
   justify-content: right;
@@ -111,13 +76,9 @@ button {
 
 #counting-number {
   font-size: min(50vw, 50vh);
-  justify-self: center;
-  margin-top: -15vh;
 }
 
 #counter-actions {
-  position: fixed;
-  bottom: 0;
   padding: 0.5rem;
   width: min(100%, 414px);
 
@@ -125,10 +86,10 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  height: 25vh;
 }
 #btn-plus, #btn-minus {
   flex: 1 0 calc(50% - (0.5rem / 2));
-  height: 12vh;
   border-radius: 100vw;
 }
 #btn-plus svg, #btn-minus svg {
@@ -159,6 +120,43 @@ input#final-number {
 }
 
 /* ========== UI elements ========== */
+
+input {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--light-color);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 1rem;
+  background: var(--dark-color);
+  color: var(--light-text);
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-main {
+  background: var(--primary);
+  color: var(--light-text);
+}
+.btn-main:hover {
+  background: var(--primary-hover);
+}
+.btn-link {
+  background: none;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 /* The switcher */
 .switcher-container {
   display: flex;
