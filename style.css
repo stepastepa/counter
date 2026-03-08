@@ -154,15 +154,17 @@ button {
   align-items: center;
 }
 .btn-main {
-  background: var(--primary);
-  color: var(--light-text);
+  /* background: var(--primary);
+  color: var(--light-text); */
+  padding: 0.75rem;
+  height: auto;
 }
-.btn-main:hover {
+/* .btn-main:hover {
   background: var(--primary-hover);
-}
+} */
 .btn-link {
   background: none;
-  color: var(--primary);
+  color: var(--dark-text);
   text-decoration: underline;
 }
 
