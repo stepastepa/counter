@@ -102,7 +102,7 @@ document.getElementById("btn-do-login").addEventListener("click", async () => {
     await signInWithEmailAndPassword(auth, email, pass);
   } catch (e) {
     console.error(e);
-    errDiv.innerText = "Ошибка: неверный логин или пароль";
+    errDiv.innerText = "Error: Incorrect email or password";
     errDiv.style.display = "block";
   }
 });

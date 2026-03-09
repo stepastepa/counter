@@ -131,11 +131,8 @@ input#final-number {
 
 .error {
   color: var(--error);
-  background: var(--light-bg);
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  font-size: 13px;
+  padding: 0.75rem;
+  font-size: 0.75rem;
   display: none;
 }
 
